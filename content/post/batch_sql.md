@@ -2,6 +2,7 @@
 date = "2014-12-16T12:18:43+01:00"
 tags = ["sql", "batch"]
 title = "Batch and SQL (1)"
+url = "/batch-and-sql-part1.html"
 +++
 
 ### Computing large data consolidations
@@ -14,7 +15,7 @@ To avoid locks on your final table, simply create a **_WRK** (or any suffixes yo
 
 #### Use **LOAD DATA LOCAL INFILE** 
 
-Write your data into a local file (CSV format) and order the MySQL driver to populate the table with the content of this one. MySQL will you binary insertion and the insert will be faster than any bulk insert.
+Write your data into a local file (CSV format) and order the MySQL driver to populate the table with the content of this one. MySQL will process to a binary insertion and the insert will be faster than any bulk insert.
 
 Example :
 
