@@ -36,4 +36,10 @@ This command will switch tables without any down, any fail and it wont be applie
 
 ##### You want to keed the data from the previous run
 
-The previous command is great, but if you want to keep previous data and simply enrich data, it will be a problem. In this case, you can use the 
+The previous command is great, but if you want to keep previous data and simply enrich data, it will be a problem. In this case, you can use the **INSERT ON DUPLICATE KEYS UPDATE command**.
+
+Imagine you have a table (and the working table, btw) that have FIELD_1, FIELD_2 that are unique :
+
+```SQL
+INSERT INTO TABLE_NAME SELECT * FROM TABLE_WRK ON DUPLICATE KEY UPDATE FIELD_3 = VALUES()
+```
