@@ -2,7 +2,6 @@
 date = "2014-12-16T12:18:43+01:00"
 tags = ["sql", "batch"]
 title = "Batch and SQL (1)"
-url = "/batch-and-sql-part1.html"
 +++
 
 ### Computing large data consolidations
