@@ -2,4 +2,12 @@ baseurl = "http://www.mrsinham.net/"
 title = "MrSinham"
 author = "Julien Lefèvre"
 copyright = "Copyright (c) 2014, Julien Lefèvre; all rights reserved."
+socialsharing = true
 disqusShortname = "mrsinham"
+[params]
+    sidebartitle = "Mrsinham's Blog"
+    sidebartagline = "IT thoughts"
+[[menu.social]]
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "http://www.twitter.com/mrsinham"
+    identifier = "mrsinham"
