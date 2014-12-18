@@ -64,7 +64,7 @@ After you can use this code like this :
 $oThrottle = new Throttle(20);
 
 foreach ($aRequest as $sRequest) {
-	$oThrotle->limit(1);
+	$oThrottle->limit(1);
 	// Do one call 
 	
 }
