@@ -22,7 +22,7 @@ Example :
 LOAD DATA LOCAL INFILE '/tmp/myfile.csv' INTO TABLE TABLE_WRK
 ```
 
-[LOAD DATA INFILE Documentation](http://dev.mysql.com/doc/refman/5.0/en/load-data.html MySQL Documentation)
+[LOAD DATA INFILE Documentation](http://dev.mysql.com/doc/refman/5.0/en/load-data.html "MySQL Documentation")
 
 You will be surprised by the speed, even if your file is in GB. Be careful, some SQL engine doesn't support LOCAL if the file is not on the MySQL server (ie : [TokuDB](http://www.tokutek.com/tokudb-for-mysql/ TokuDB)).
 
@@ -34,7 +34,7 @@ If you dont need to keep the previous data, you can use the double **RENAME** sq
 RENAME TABLE TABLE_FINAL TO TABLE_BACKUP, TABLE_WRK TO TABLE_FINAL;
 ```
 
-[RENAME TABLE Documentation](http://dev.mysql.com/doc/refman/5.0/en/rename-table.html MySQL Documentation)
+[RENAME TABLE Documentation](http://dev.mysql.com/doc/refman/5.0/en/rename-table.html "MySQL Documentation")
 
 This command will switch tables without any down : any fail and it wont be applied.
 
