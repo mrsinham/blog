@@ -56,7 +56,7 @@ class Throttle
 }
 ```
 
-The idea is taken from [Golang Ratelimit](https://github.com/golang/go/wiki/RateLimiting) and illustrate that with no cost, you can be gentle and secure your infrastructure.
+The idea is taken from [Golang Ratelimit](https://github.com/golang/go/wiki/RateLimiting) and illustrate that with no cost, you can be gentle and secure your infrastructure services.
 
 After you can use this code like this :
 

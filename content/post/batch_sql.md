@@ -48,4 +48,4 @@ Imagine you have a table (and the working table, btw) that have FIELD_1, FIELD_2
 INSERT INTO TABLE_NAME SELECT * FROM TABLE_WRK ON DUPLICATE KEY UPDATE FIELD_3 = VALUES(FIELD_3)
 ```
 
-It will insert new values that are based on the unique index and update the old ones. This operation costs more than the previous one but is my favorite. It will lock line by line and quite effective.
+It will insert new values that are based on the unique index and update the old ones. This operation costs more than the previous one but is my favorite. It will lock line by line and is quite effective.
