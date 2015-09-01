@@ -3,7 +3,6 @@ date = "2015-09-01T12:30:00+01:00"
 tags = ["go", "golang", "blog", "hugo", "docker"]
 title = "Create a blog in 2 min with Hugo and Docker"
 url = "/create-a-blog-in-2-min"
-draft = true
 +++
 
 ## Perimeter
