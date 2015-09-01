@@ -29,11 +29,11 @@ Example :
 ```
 $GOPATH/src/
         \_ my/app/
-                    \_Godeps/_workspace/src/my/dependency <- "used with godep go build"
+                    \_Godeps/_workspace/src/my/dependency <- used with "godep go build"
         \_ my/dependency <- used with "go build"
 ```
 
-The bonus part is that _workspace contains a pkg dir that makes a buffer for already compiled package and that this directory is automatically ignored by a .gitignore file created in the _workspace dir.
+The bonus part is that _workspace contains a **/pkg/** dir that makes a buffer for already compiled package and that this directory is automatically ignored by a .gitignore file created in the _workspace dir.
 
 #### 2.Creating deployable application
 
