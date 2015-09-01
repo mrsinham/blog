@@ -4,8 +4,12 @@ author = "Julien Lefèvre"
 copyright = "Copyright (c) 2014, Julien Lefèvre; all rights reserved."
 socialsharing = true
 disqusShortname = "mrsinham"
+Paginate = 10
+
 [params]
     sidebartitle = "Mrsinham's Blog"
+    twitterName = "mrsinham"
+    githubName = "mrsinham"
     sidebartagline = "IT thoughts"
 [[menu.social]]
     pre = "<i class='fa fa-twitter'></i>"
