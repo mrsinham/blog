@@ -7,4 +7,4 @@ title = "Test post"
 
 ### Test post
 
-I just want to know if this works.
+I just want to know if this works. Test 2.
