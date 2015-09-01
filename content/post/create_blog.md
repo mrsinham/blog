@@ -24,7 +24,11 @@ Well it needs git. But you need git too in your life ;)
 
 ## The structure of the project
 
-Let's create a directory with all the files we need. Let's say it's **blog/**.
+Let's create a directory with all the files we need. Let's say it's **blog/**. So :
+
+```
+mkdir blog && cd blog
+```
 
 #### Hugo prerequisites :
 
@@ -59,13 +63,13 @@ blog/config.toml
 Let's create the directory for the posts :
 
 ```
-mkdir -p blog/content/post/
+mkdir -p content/post/
 ```
 
 And the first post.
 
 ```
-touch blog/content/post/my_awesome_post.md
+touch content/post/my_awesome_post.md
 ```
 
 Let's edit the content of this one :
@@ -86,21 +90,29 @@ I just want to know if this works.
 Ok now we have the Hugo config file and one post, we can now start the things.
 
 
-Now that we have :
+Now that we have in our **blog** dir :
 
 ```
-blog/config.toml
-blog/content/post/my_awesome_post.md
+config.toml
+content/post/my_awesome_post.md
 ```
 
-We add this to an accessible Git repository (git add, git commit, git push). ! Don't add /blog, it's the root of the repository !
+We add this to an accessible Git repository (git add, git commit, git push). ! Don't add /blog, it must be the root of the repository !
 
 
 ### Creating a Docker image for the blog
 
-Now we must write a Dockerfile that will describe all the things we want in this container. It's the description of all things that 
+This part needs Docker to be installed. Usually a :
 
-Let's write a **Dockerfile** (fills the sections with your infos) :
+```
+apt-get install docker.io
+```
+
+is enought.
+
+Now we must write a Dockerfile that will describe all the things we want in this container. It's the description of all things that will create the container (a simplified VM if you prefer). 
+
+Let's write this **Dockerfile** (fills the sections with your infos and don't hesitate to read the Docker documentation) :
 
 ```docker
 FROM ubuntu:15.04
