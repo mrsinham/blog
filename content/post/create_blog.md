@@ -100,7 +100,7 @@ We add this to an accessible Git repository (git add, git commit, git push). ! D
 
 Now we must write a Dockerfile that will describe all the things we want in this container. It's the description of all things that 
 
-Let's write a **Dockerfile** (fills the [] sections with your infos) :
+Let's write a **Dockerfile** (fills the sections with your infos) :
 
 ```docker
 FROM ubuntu:15.04
@@ -116,13 +116,13 @@ ENV PATH $PATH:/go/bin
 
 RUN hugo new site /blog
 
-RUN cd /blog/ && rm -rf content/ && git init && git remote add -f origin [https://github.com/my/blog.git] && git config core.sparseCheckout true && echo "content/" >> .git/info/sparse-checkout && git pull origin master
+RUN cd /blog/ && rm -rf content/ && git init && git remote add -f origin https://github.com/my/blog.git && git config core.sparseCheckout true && echo "content/" >> .git/info/sparse-checkout && git pull origin master
 RUN cp /source/config.toml /blog
 RUN git clone https://github.com/dplesca/purehugo.git /blog/themes/purehugo
 
 EXPOSE 80
 
-RUN echo 'hugo server -t purehugo -b="http://www.[fillthehost].com" -s /blog -p 80 --bind=0.0.0.0 --watch --disableLiveReload &' >> /start.sh && \
+RUN echo 'hugo server -t purehugo -b="http://www.fillthehost.com" -s /blog -p 80 --bind=0.0.0.0 --watch --disableLiveReload &' >> /start.sh && \
 echo 'cd /blog/content/' >> /start.sh && \ 
 echo 'while true; do git pull origin master && sleep 60 ; done' >> /start.sh
 
