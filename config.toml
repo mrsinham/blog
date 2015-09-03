@@ -11,6 +11,7 @@ Paginate = 10
     twitterName = "mrsinham"
     githubName = "mrsinham"
     sidebartagline = "IT thoughts"
+    google_analytics = "UA-44854344-1"
 [[menu.social]]
     pre = "<i class='fa fa-twitter'></i>"
     url = "http://www.twitter.com/mrsinham"
