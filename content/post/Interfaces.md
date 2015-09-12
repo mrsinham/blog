@@ -2,6 +2,7 @@
 date = "2015-09-10T19:00:43+01:00"
 tags = ["go", "golang", "interface", "cost", "summary"]
 title = "What is the cost of Go interfaces"
+draft = true
 +++
 
 ### Summary 
