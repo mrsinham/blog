@@ -1,9 +1,8 @@
 +++
-date = "2015-09-10T19:00:43+01:00"
+date = "2015-09-13T18:41:00+02:00"
 tags = ["go", "golang", "interface", "cost", "summary"]
 title = "What is the cost of go interfaces"
 url = "/the-cost-of-golang-interfaces"
-draft = true
 +++
 
 ## Summary 
