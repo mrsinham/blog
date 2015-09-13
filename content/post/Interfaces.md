@@ -15,6 +15,8 @@ It's an awesome feature and sometimes it is better to sacrifice some performance
 
 Like [this slide from Brad Fitzpatrick](https://docs.google.com/presentation/d/1lL7Wlh9GBtTSieqHGJ5AUd1XVYR48UPhEloVem-79mA/edit#slide=id.gc5ec805d9_0_480) explains, an interface is composed of two words (two information) : an envelope and a body. The first part describe the type of the underlying type and the second part is the data as itself : a pointer to the data if it's the case or a value.
 
+![Slide from Brad Fitzpatric](http://i.imgur.com/b4qykAn.png)
+
 If we read in this (old) page (http://www.airs.com/blog/archives/277) the last comment of **Ian Lance Taylor** (the author), written the 22 august 2015, it says :
 
 ```
