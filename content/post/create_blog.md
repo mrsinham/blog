@@ -129,7 +129,6 @@ ENV PATH $PATH:/go/bin
 RUN hugo new site /blog
 
 RUN cd /blog/ && rm -rf content/ && git init && git remote add -f origin https://github.com/my/blog.git && git config core.sparseCheckout true && echo "content/" >> .git/info/sparse-checkout && git pull origin master
-RUN cp /source/config.toml /blog
 RUN git clone https://github.com/dplesca/purehugo.git /blog/themes/purehugo
 
 EXPOSE 80
