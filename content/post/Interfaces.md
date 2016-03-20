@@ -366,5 +366,3 @@ Go interfaces are great. There's a lot of articles that are proving the power th
 #### Note
 
 * All this benchmarks are available at this address : [https://github.com/mrsinham/it](https://github.com/mrsinham/it)
-* I could be wrong on some assumptions in this article : please let me know if you see them ;)
-* My english … is far from perfect ;)
