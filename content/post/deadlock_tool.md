@@ -1,7 +1,7 @@
 +++
 date = "2019-03-20T13:00:00+02:00"
 tags = ["go", "golang", "deadlock", "debug", "tool"]
-title = "Micropost : Debug a deadlock"
+title = "Micropost on Go : Debug a deadlock"
 url = "/debug-a-deadlock"
 +++
 
