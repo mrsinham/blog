@@ -16,4 +16,4 @@ There are simple ways to achieve it :
 * Use htop and the kill option
 * Use simply kill -s SIGQUIT [pid]
 
-It saved my day. Thanks for the trick, Mitchell ! (and read the rest on the presentation, it is pretty cool).
+It saved my day. Thanks for the trick, Mitchell ! (and read the rest of the presentation, it is pretty cool).
