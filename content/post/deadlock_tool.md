@@ -6,7 +6,7 @@ url = "/debug-a-deadlock"
 +++
 
 
-Here is a trick that I learned from the awesome presentation (https://speakerdeck.com/mitchellh/advanced-testing-with-go) of Mitchell Hashimoto (https://twitter.com/mitchellh). When you are stuck in a deadlock situation that is tricky to resolve (for example when it needs special conditions to be triggered) and that you have not enought log to investigate, you can use a special move to understand.
+Here is a trick that I learned from the awesome presentation (https://speakerdeck.com/mitchellh/advanced-testing-with-go) of Mitchell Hashimoto (https://twitter.com/mitchellh). When you are stuck in a deadlock situation that is tricky to resolve (for example when it needs special conditions to be triggered) and that you have not enough log to investigate, you can use a special move to understand.
 
 You can simply kill the program by using a *SIGQUIT* instead of a *SIGTERM*. It will output the trace of every goroutine of your program.
 
